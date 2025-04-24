@@ -1,0 +1,41 @@
+<html>
+    <head>
+    <title> login </title>
+    <meta charset="UTF-8">
+    <meta name="riewport" content="width device-witch">
+    </head>
+    <body style="background-image: url(envio6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed">
+    <center>
+        <script>
+            function usrpas(){
+                if ( document.x.txtusuario.value== "Hola" &&
+                    document.x.txtpassword.value== "1234")
+                    {
+                        window.location= "botones.html"
+                    }
+                    else{
+                        alert( " ingreso de datos incorrectos. vuelva a intentarlo" )
+                    }
+            }
+            document.oncontextmenu=new Function("return false");
+        </script>
+        <h1>CARGO EXPRESS</h1>
+        <h4>envio de paquetes</h4>
+        <pre>
+            <image src="envio1.jpg"><br>
+        </pre>
+        <h3>BIENVENIDOS</h3>
+        <image src="candado.png"><br>
+            <form method="post" name="x">
+                <input type="text" placeholder="Usuario" name="txtusuario"/><br>
+                <input type="password" placeholder="contraseña" name="txtpassword"/><br>
+                <input type="button" value="Ingresar" onclick="usrpas()" >
+            </form>
+    </center>
+        
+    </body>
+</html>
